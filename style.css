@@ -112,7 +112,7 @@ body{
     line-height: 1.5;
 }
 
-.tittle-servicios, .tittle-marcas, .tittle-cerrajeria{
+.tittle-servicios, .tittle-marcas, .tittle-cerrajeria, .tittle-other-services, .tittle-contact{
     font-size: 30px;
     letter-spacing: 0.08em;
     padding-left: 80px;
@@ -193,7 +193,6 @@ body{
     padding: 30px;
     border: 1px solid #dcdcdc;
     transition: 0.3s;
-
 }
 
 .whatsapp-box h2{
@@ -225,6 +224,73 @@ body{
 
 .btn-whatsapp:hover{
     transform: translateY(-3px);
-    box-shadow: 0px 5px 15px rgba(37, 211, 102, 0.4);
+    box-shadow: 0px 5px 10px #ff3B1D;
+}
+
+.other-services{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 80px;
+    padding-top: 15px;
+}
+
+.card-other-servicio{
+    background-color: whitesmoke;
+    padding: 10px 30px; 
+    border: 1px solid #dcdcdc;
+    transition: 0.3s;
+}
+
+.list-otherservices{
+    list-style-type: none;
+}
+
+.list-otherservices .li-otherservices::before{
+    content: "- ";
+    font-weight: bold;
+    color: var(--color-primary);
+}
+
+.card-other-servicio h3{
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #111111;
+}
+
+.card-other-servicio li{
+    color: #555555;
+    line-height: 1.5;
+}
+
+.card-other-servicio:hover{
+    transform: translateY(-5px);
+    box-shadow: 1px 1px 5px #ff3B1D;
+    border-color: #FF3B1D;
+}
+
+.contact{
+    background-color: #ff3B1D;
+}
+
+.numlist-contact{
+    font-size: 25px;
+    letter-spacing: 0.08em;
+    padding: 15px 0px 15px 80px;
+    text-transform: uppercase;
+    list-style: none;
+}
+
+.numlist-contact li{
+    margin: 15px 0;
+}
+
+.numlist-contact a{
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+}
+
+.numlist-contact a:hover{
+    color: whitesmoke;
 }
 
