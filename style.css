@@ -384,3 +384,62 @@ body{
     margin: 0;
     font-size: 14px;
 }
+
+@media (max-width: 768px){
+    .nav{
+        flex-direction: column;
+        padding: 20px;
+    }
+    .nav-links{
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+}
+
+@media (max-width: 768px){
+    .Contenido-principal{
+        padding: 40px 20px;
+        text-align: center;
+        align-items: center;
+    }
+    .h1-principal{
+        font-size: 50px;
+    }
+    .h2-principal{
+        margin-top: -20px;
+        font-size: 28px;
+    }
+    .h3-principal{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px){
+    .servicios{
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px){
+    .marcas{
+        grid-template-columns: repeat(2, 1fr);
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px){
+    .contenedor-cerrajeria{
+        flex-direction: column;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px){
+    .contact-container{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 30px 20px;
+    }
+}
