@@ -20,6 +20,9 @@ body{
     align-items: center;
     padding: 10px 60px;
     border-bottom: 1px solid #FF2400;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .nav-logo{
@@ -270,18 +273,21 @@ body{
 
 .contact{
     background-color: #ff3B1D;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .numlist-contact{
     font-size: 25px;
     letter-spacing: 0.08em;
-    padding: 15px 0px 15px 80px;
+    padding: 5px 0px 5px 80px;
     text-transform: uppercase;
     list-style: none;
 }
 
 .numlist-contact li{
-    margin: 15px 0;
+    margin: 0px 0;
 }
 
 .numlist-contact a{
@@ -294,3 +300,87 @@ body{
     color: whitesmoke;
 }
 
+.whatsapp-box-2{
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 80px;
+    background-color: transparent;
+    transition: 0.3s;
+    padding: 10px 20px;
+    padding-bottom: 50px;
+}
+
+.btn-whatsapp-2{
+    background-color: black;
+    color: #FF3B1D;
+    text-decoration: none;
+    padding: 14px 24px;
+    border-radius: 12px;
+    width: fit-content;
+    font-weight: bold;
+    letter-spacing: 0.08em;
+    transition: 0.3s;
+}
+
+.btn-whatsapp-2:hover{
+    color: whitesmoke;
+}
+
+.contact-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+    background-color: #FF3B1D;
+    padding: 50px 80px;
+}
+
+.info-extra{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 500px;
+    padding: 5px 0px 5px 80px;
+}
+
+.info h3{
+    color: #222222;
+    line-height: 1.5;
+    font-size: 16px;
+    margin-bottom: 2px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.info p{
+    color: #111111;
+    margin-top: 0;
+    margin-bottom: 5px;
+    line-height: 1.4;
+    font-size: 18px;
+}
+
+.info a{
+    text-decoration: none;
+    color: #111111;
+}
+
+.info a:hover{
+    color: whitesmoke;
+}
+
+.footer-container{
+    background-color: var(--color-navbar);
+    padding: 25px;
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.footer h4{
+    color: whitesmoke;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    margin: 0;
+    font-size: 14px;
+}
