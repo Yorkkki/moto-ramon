@@ -472,50 +472,38 @@ body{
 }
 
 @media (max-width:768px){
-    .tittle-contact{
-padding-left: 0;
+.contact{
+overflow-x: hidden;
+}
+.tittle-contact{
+padding-left: 20px;
+font-size: 24px;
 }
 .contact-container{
 flex-direction: column;
-align-items: stretch;
-padding: 30px 25px;
-gap: 15px;
+align-items: flex-start;
+padding: 30px 20px;
+gap: 20px;
+width: 100%;
+}
+.numlist-contact{
+padding: 0 20px;
+margin: 0;
+font-size: 20px;
 }
 .whatsapp-box-2{
-margin-left: 0;
-padding-left: 0;
-}
-.info-extra{
-padding: 0;
+margin: 0;
+padding: 0 20px;
+width: 100%;
 max-width: 100%;
 }
-
-.numlist-contact{
-padding: 0;
-margin-left: 0;
-font-size: 22px;
-}
-
 .btn-whatsapp-2{
+display: block;
 width: 100%;
 text-align: center;
 }
-
+.info-extra{
+padding: 0 20px;
+max-width: 100%;
 }
-
-@media (max-width: 768px){
-    .other-services{
-        grid-template-columns: 1fr;
-        padding: 20px;
-        gap: 15px;
-    }
-    .card-other-servicio{
-        padding: 20px;
-    }
-    .card-other-servicio h3{
-        font-size: 20px;
-    }
-    .card-other-servicio li{
-        font-size: 15px;
-    }
 }
