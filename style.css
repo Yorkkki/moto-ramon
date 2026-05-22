@@ -385,7 +385,7 @@ body{
 
 .card-other-servicio{
     background-color: whitesmoke;
-    padding: 10px 30px;
+    padding: 20px;
     border: 1px solid #dcdcdc;
     transition: 0.3s;
 }
@@ -505,5 +505,22 @@ text-align: center;
 .info-extra{
 padding: 0 20px;
 max-width: 100%;
+}
+}
+
+@media (max-width:768px){
+.other-services{
+    grid-template-columns: 1fr;
+    padding: 20px;
+    gap: 15px;
+}
+.card-other-servicio{
+    width: 100%;
+    max-width: 100%;
+    padding: 20px;
+}
+.list-otherservices{
+    padding-left: 15px;
+    margin: 0;
 }
 }
