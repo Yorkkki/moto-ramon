@@ -30,7 +30,6 @@ body{
     font-weight: 300;
     line-height: 1.6;
     font-family: "Montserrat", sans-serif;
-    overflow-x: hidden;
 }
 
 .nav{
@@ -324,9 +323,9 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 80px;
+    gap: 40px;
     background-color: #FF3B1D;
-    padding: 50px 80px;
+    padding: 50px 40px;
 }
 
 .info-extra{
@@ -472,22 +471,22 @@ body{
     }
 }
 
-@media (max-width: 768px){
+@media (max-width:768px){
 .contact-container{
-    flex-direction: column;
-    padding: 30px 20px;
-    gap: 20px;
+flex-direction: column;
+align-items: stretch;
+padding: 30px 25px;
+gap: 15px;
 }
-
 .whatsapp-box-2{
-    margin-left: 0;
-    padding: 0;
+margin-left: 0;
+max-width: 100%;
+}
+.info-extra{
+padding: 0;
+max-width: 100%;
 }
 
-.info-extra{
-    padding: 0;
-    max-width: 100%;
-}
 .numlist-contact{
     padding-left: 0;
 }
