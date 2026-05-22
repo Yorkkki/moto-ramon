@@ -472,6 +472,9 @@ body{
 }
 
 @media (max-width:768px){
+    .tittle-contact{
+padding-left: 0;
+}
 .contact-container{
 flex-direction: column;
 align-items: stretch;
@@ -480,7 +483,7 @@ gap: 15px;
 }
 .whatsapp-box-2{
 margin-left: 0;
-max-width: 100%;
+padding-left: 0;
 }
 .info-extra{
 padding: 0;
@@ -488,8 +491,16 @@ max-width: 100%;
 }
 
 .numlist-contact{
-    padding-left: 0;
+padding: 0;
+margin-left: 0;
+font-size: 22px;
 }
+
+.btn-whatsapp-2{
+width: 100%;
+text-align: center;
+}
+
 }
 
 @media (max-width: 768px){
