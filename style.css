@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 :root{
     --color-bg: #F5F5F5;
     --color-navbar: #0F0F0F;
@@ -165,10 +169,10 @@ body{
 
 .card-cerrajeria{
     background-color: whitesmoke;
-    padding: 1px 280px 1px 30px;
+    padding: 20px;
     border: 1px solid #dcdcdc;
     transition: 0.3s;
-    max-width: 45%;
+    max-width: 100%;
 }
 
 .card-cerrajeria h3{
@@ -182,9 +186,7 @@ body{
     line-height: 1.5;
 }
 
-.card-cerrajeria:hover{
-    border-color: #FF3B1D;
-}
+.card-cerrajeria:hover{border-color: #FF3B1D;}
 
 .whatsapp-box{
     max-width: 400px;
@@ -228,47 +230,6 @@ body{
 .btn-whatsapp:hover{
     transform: translateY(-3px);
     box-shadow: 0px 5px 10px #ff3B1D;
-}
-
-.other-services{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    padding: 80px;
-    padding-top: 15px;
-}
-
-.card-other-servicio{
-    background-color: whitesmoke;
-    padding: 10px 30px; 
-    border: 1px solid #dcdcdc;
-    transition: 0.3s;
-}
-
-.list-otherservices{
-    list-style-type: none;
-}
-
-.list-otherservices .li-otherservices::before{
-    content: "- ";
-    font-weight: bold;
-    color: var(--color-primary);
-}
-
-.card-other-servicio h3{
-    font-size: 24px;
-    margin-bottom: 10px;
-    color: #111111;
-}
-
-.card-other-servicio li{
-    color: #555555;
-    line-height: 1.5;
-}
-
-.card-other-servicio:hover{
-    transform: translateY(-5px);
-    box-shadow: 1px 1px 5px #ff3B1D;
-    border-color: #FF3B1D;
 }
 
 .contact{
@@ -323,9 +284,7 @@ body{
     transition: 0.3s;
 }
 
-.btn-whatsapp-2:hover{
-    color: whitesmoke;
-}
+.btn-whatsapp-2:hover{color: whitesmoke;}
 
 .contact-container{
     display: flex;
@@ -366,9 +325,7 @@ body{
     color: #111111;
 }
 
-.info a:hover{
-    color: whitesmoke;
-}
+.info a:hover{color: whitesmoke;}
 
 .footer-container{
     background-color: var(--color-navbar);
@@ -385,33 +342,68 @@ body{
     font-size: 14px;
 }
 
+.other-services{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 80px;
+    padding-top: 15px;
+    gap: 25px;
+}
+
+.card-other-servicio{
+    background-color: whitesmoke;
+    padding: 10px 30px;
+    border: 1px solid #dcdcdc;
+    transition: 0.3s;
+}
+
+.list-otherservices{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.card-other-servicio:hover{
+    transform: translateY(-5px);
+    box-shadow: 1px 1px 5px #ff3B1D;
+    border-color: #FF3B1D;
+}
+
 @media (max-width: 768px){
     .nav{
         flex-direction: column;
-        padding: 20px;
+        padding: 15px 20px;
+    }
+    .nav-logo{
+        font-size: 24px;
     }
     .nav-links{
         flex-direction: column;
         align-items: center;
         padding: 0;
+        gap: 10px;
+    }
+    .nav-links-a{
+        font-size: 14px;
     }
 }
 
 @media (max-width: 768px){
     .Contenido-principal{
-        padding: 40px 20px;
+        min-height: 60vh;
+        padding: 30px;
         text-align: center;
         align-items: center;
     }
     .h1-principal{
-        font-size: 50px;
+        font-size: 42px;
     }
     .h2-principal{
-        margin-top: -20px;
-        font-size: 28px;
+        font-size: 22px;
+        margin-top: -10px;
     }
     .h3-principal{
-        font-size: 16px;
+        font-size: 15px;
+        max-width: 90%;
     }
 }
 
@@ -419,6 +411,16 @@ body{
     .servicios{
         grid-template-columns: 1fr;
         padding: 20px;
+        gap: 15px;
+    }
+    .card-servicio{
+        padding: 20px;
+    }
+    .card-servicio h3{
+        font-size: 20px;
+    }
+    .card-servicio p{
+        font-size: 15px;
     }
 }
 
@@ -441,5 +443,22 @@ body{
         flex-direction: column;
         align-items: flex-start;
         padding: 30px 20px;
+    }
+}
+
+@media (max-width: 768px){
+    .other-services{
+        grid-template-columns: 1fr;
+        padding: 20px;
+        gap: 15px;
+    }
+    .card-other-servicio{
+        padding: 20px;
+    }
+    .card-other-servicio h3{
+        font-size: 20px;
+    }
+    .card-other-servicio li{
+        font-size: 15px;
     }
 }
