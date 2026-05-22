@@ -388,11 +388,14 @@ body{
     padding: 20px;
     border: 1px solid #dcdcdc;
     transition: 0.3s;
+    min-width: 0;
+    overflow-wrap: break-word;
 }
 
 .list-otherservices{
     list-style-type: none;
-    padding-left: 0;
+    padding: 0;
+    margin: 0;
 }
 
 .card-other-servicio:hover{
@@ -522,5 +525,17 @@ max-width: 100%;
 .list-otherservices{
     padding-left: 15px;
     margin: 0;
+}
+}
+
+@media (max-width:768px){
+.other-services{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    padding: 20px;
+}
+.card-other-servicio{
+    width: 100%;
 }
 }
